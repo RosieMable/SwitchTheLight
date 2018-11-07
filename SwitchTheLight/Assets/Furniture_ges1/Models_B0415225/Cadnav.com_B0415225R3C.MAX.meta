@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 3480ce0f15462a44d8906d560bc04794
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Camera01
+    100004: Camera01.Target
+    100006: Curve01
+    100008: Curve01(Blend Surf 01)
+    100010: Curve01(CV Curve 02)
+    100012: Curve01(CV Curve 03)
+    100014: Curve01(CV Curve 04)
+    100016: Curve01(CV Curve 05)
+    100018: Curve01(CV Curve 06)
+    100020: Curve01(CV Curve 07)
+    100022: Curve01(CV Curve 08)
+    100024: Curve01(CV Curve 09)
+    100026: Curve01(CV Curve 10)
+    100028: Curve01(CV Curve 11)
+    100030: Curve01(CV Curve 12)
+    100032: Curve01(CV Curve 13)
+    100034: Curve01(CV Curve 14)
+    100036: Curve01(CV Curve 15)
+    100038: Curve01(CV Curve 16)
+    100040: Curve01(CV Curve 17)
+    100042: Curve01(CV Curve 18)
+    100044: Curve01(CV Curve 19)
+    100046: Curve01(CV Curve 20)
+    100048: Curve01(CV Curve 21)
+    100050: Curve01(CV Curve 22)
+    100052: Curve01(CV Curve 23)
+    100054: Curve01(CV Curve 24)
+    100056: Curve01(CV Curve 25)
+    100058: Curve01(CV Curve 26)
+    100060: Curve01(CV Curve 27)
+    100062: Curve01(CV Curve 28)
+    100064: Curve01(CV Curve 29)
+    100066: Curve01(CV Curve 30)
+    100068: Curve01(Extrude Surf 01)
+    100070: Loft09
+    100072: Omni01
+    100074: Spot01
+    100076: Spot01.Target
+    400000: //RootNode
+    400002: Camera01
+    400004: Camera01.Target
+    400006: Curve01
+    400008: Curve01(Blend Surf 01)
+    400010: Curve01(CV Curve 02)
+    400012: Curve01(CV Curve 03)
+    400014: Curve01(CV Curve 04)
+    400016: Curve01(CV Curve 05)
+    400018: Curve01(CV Curve 06)
+    400020: Curve01(CV Curve 07)
+    400022: Curve01(CV Curve 08)
+    400024: Curve01(CV Curve 09)
+    400026: Curve01(CV Curve 10)
+    400028: Curve01(CV Curve 11)
+    400030: Curve01(CV Curve 12)
+    400032: Curve01(CV Curve 13)
+    400034: Curve01(CV Curve 14)
+    400036: Curve01(CV Curve 15)
+    400038: Curve01(CV Curve 16)
+    400040: Curve01(CV Curve 17)
+    400042: Curve01(CV Curve 18)
+    400044: Curve01(CV Curve 19)
+    400046: Curve01(CV Curve 20)
+    400048: Curve01(CV Curve 21)
+    400050: Curve01(CV Curve 22)
+    400052: Curve01(CV Curve 23)
+    400054: Curve01(CV Curve 24)
+    400056: Curve01(CV Curve 25)
+    400058: Curve01(CV Curve 26)
+    400060: Curve01(CV Curve 27)
+    400062: Curve01(CV Curve 28)
+    400064: Curve01(CV Curve 29)
+    400066: Curve01(CV Curve 30)
+    400068: Curve01(Extrude Surf 01)
+    400070: Loft09
+    400072: Omni01
+    400074: Spot01
+    400076: Spot01.Target
+    2000000: Camera01
+    2100000: "\u5E18hj"
+    2300000: Loft09
+    3300000: Loft09
+    4300000: Loft09
+    9500000: //RootNode
+    10800000: Omni01
+    10800002: Spot01
+    6000828045688606266: Camera01
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
