@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DialogueTrigger : UIDialogueManager {
 
+
     private GameObject PC;
 
     protected override void Start()
@@ -11,27 +12,9 @@ public class DialogueTrigger : UIDialogueManager {
         base.Start();
         PC = FindObjectOfType<PlayerController>().gameObject;
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject == PC)
-        {
-            if (fullText != "")
-            {
-                StartCoroutine(ShowText(fullText));
-            }
-            else
-            {
-                fullText = "There is no text, you fuck";
-                StartCoroutine(ShowText(fullText));
-            }
-        }
-    }
 
-    private void OnTriggerExit(Collider other)
+    private void FixedUpdate()
     {
-        if (other.gameObject == PC)
-        {
-            StartCoroutine(ShowText(EmptyText));
-        }
+        CheckRadius(PC.gameObject.transform.position, this.transform.position);
     }
 }

@@ -24,14 +24,10 @@ public class FootSteps : MonoBehaviour
 
     void PlayWalkSound()
     {
-        if (player.iswalking)
+        if (player.iswalking == false)
         {
             audioSource.clip = walk;
             audioSource.Play();
-        }
-        else
-        {
-           // audioSource.Stop();
         }
     }
 }

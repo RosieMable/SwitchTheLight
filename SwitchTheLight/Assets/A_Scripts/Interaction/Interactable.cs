@@ -71,7 +71,7 @@ public class Interactable : MonoBehaviour
         //Here goes the text and the buttons that will be shown when getting close to an interactable
         InteractionPanel.SetActive(true);
 
-        StartCoroutine(ShowText(ShowInteractionText, InteractionText));
+        StartCoroutine(TypeSentence(ShowInteractionText, InteractionText));
     }
 
 
@@ -101,12 +101,12 @@ public class Interactable : MonoBehaviour
 
             if (DistanceFromObject <= radius)
             {
-                print("In range of " + Object.name);
+                //print("In range of " + Object.name);
                 InRangeOfSomeone = true;
             }
             else
             {
-                print("Not in range of " + Object.name);
+                //print("Not in range of " + Object.name);
                 InRangeOfSomeone = false;
             }
         }
@@ -137,18 +137,15 @@ public class Interactable : MonoBehaviour
         }
     }
 
-    protected virtual IEnumerator ShowText(string YourText, Text textPanel)
+   protected virtual IEnumerator TypeSentence(string sentence, Text textPanel)
     {
+        textPanel.text = "";
 
-
-        for (int i = 0; i < YourText.Length + 1; i++)
+        foreach (char letter in sentence.ToCharArray())
         {
-           YourText = YourText.Substring(0, i);
-            textPanel.text = YourText;
-
-            yield return new WaitForSeconds(delay);
+            textPanel.text += letter;
+            yield return null;
         }
-
     }
 
 

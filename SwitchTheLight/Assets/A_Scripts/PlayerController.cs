@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
             // Convert world coordinates to local for the PC and multiply by speed
             v3_move_direction = fl_speed * transform.TransformDirection(v3_move_direction);
 
-            if (cc_PC.velocity.magnitude > 0)
+            if (cc_PC.velocity.x != 0)
             {
 
                 iswalking = true;
