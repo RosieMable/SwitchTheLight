@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueTrigger : UIGameManager {
+public class DialogueTrigger : UIDialogueManager {
 
     private GameObject PC;
 
@@ -11,7 +11,6 @@ public class DialogueTrigger : UIGameManager {
         base.Start();
         PC = FindObjectOfType<PlayerController>().gameObject;
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == PC)
@@ -32,8 +31,7 @@ public class DialogueTrigger : UIGameManager {
     {
         if (other.gameObject == PC)
         {
-            fullText = "  ";
-            StartCoroutine(ShowText(fullText));
+            StartCoroutine(ShowText(EmptyText));
         }
     }
 }

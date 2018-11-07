@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 v3_move_direction = Vector3.zero;
     private CharacterController cc_PC;
     private float fl_initial_speed;
+    public bool iswalking = false;
+
     private bool bl_climbing;
     public GameObject go_PC_camera;
 
@@ -36,9 +38,6 @@ public class PlayerController : MonoBehaviour
     //  PC Movement control
     void MovePC()
     {
-        // Run with Shift
-        if (Input.GetKey(KeyCode.LeftShift)) fl_speed = fl_initial_speed * 2; else fl_speed = fl_initial_speed;
-
         // Rotate PC with Mouse 
         transform.Rotate(0, fl_rotation_rate * Time.deltaTime * Input.GetAxis("Mouse X"), 0);
 
@@ -50,11 +49,24 @@ public class PlayerController : MonoBehaviour
 
             // Convert world coordinates to local for the PC and multiply by speed
             v3_move_direction = fl_speed * transform.TransformDirection(v3_move_direction);
+
+            if (cc_PC.velocity.magnitude > 0)
+            {
+
+                iswalking = true;
+            }
+            else
+            {
+                iswalking = false;
+            }
         }
 
             v3_move_direction.y -= fl_gravity * Time.deltaTime;
 
         // Move the character controller with the direction vector
         cc_PC.Move(v3_move_direction * Time.deltaTime);
+
+
+
     }// ----- 
 }

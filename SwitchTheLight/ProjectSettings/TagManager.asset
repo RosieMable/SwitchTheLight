@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - DialogueText
+  - Interactable
+  - InteractionPanel
+  - Interact
   layers:
   - Default
   - TransparentFX
