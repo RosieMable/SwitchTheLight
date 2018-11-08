@@ -2,6 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bed : Interactable {
+public class Bed : Lalala {
 
 }
