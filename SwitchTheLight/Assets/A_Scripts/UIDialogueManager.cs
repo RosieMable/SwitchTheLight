@@ -22,6 +22,8 @@ public class UIDialogueManager : MonoBehaviour {
     [SerializeField]
     protected Text DialogueText;
 
+    protected bool IsTextWritten;
+
     // Use this for initialization
     protected virtual void Start() {
 
@@ -42,14 +44,19 @@ public class UIDialogueManager : MonoBehaviour {
         else
         {
             DialogueText.gameObject.SetActive(false);
+            IsTextWritten = false;
         }
     }
      
 
 protected virtual void ActionsInRadius()
     {
-           
-      StartCoroutine(TypeSentence(fullText, DialogueText));
+        if (!IsTextWritten)
+        {
+            StartCoroutine(TypeSentence(fullText, DialogueText));
+            IsTextWritten = true;
+        }
+
     }
 
     protected virtual IEnumerator TypeSentence(string sentence, Text textPanel)

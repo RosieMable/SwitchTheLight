@@ -103,6 +103,12 @@ public class Interactable : MonoBehaviour
             {
                 //print("In range of " + Object.name);
                 InRangeOfSomeone = true;
+
+                if (Input.GetKeyUp(KeyCode.E))
+                {
+                    Interacting = true;
+                    InRadius();
+                }
             }
             else
             {
@@ -122,11 +128,7 @@ public class Interactable : MonoBehaviour
                 Interact.enabled = false;
             }
 
-            if (Input.GetKeyUp(KeyCode.E))
-            {
-                Interacting = true;
-                InRadius();
-            }
+   
 
         }
         else if(DistanceFromInteractable > radius && !InRangeOfSomeone)

@@ -5,7 +5,7 @@ using UnityEngine;
 public class DialogueTrigger : UIDialogueManager {
 
 
-    private GameObject PC;
+    protected GameObject PC;
 
     protected override void Start()
     {
@@ -13,7 +13,7 @@ public class DialogueTrigger : UIDialogueManager {
         PC = FindObjectOfType<PlayerController>().gameObject;
     }
 
-    private void FixedUpdate()
+    protected void FixedUpdate()
     {
         CheckRadius(PC.gameObject.transform.position, this.transform.position);
     }
