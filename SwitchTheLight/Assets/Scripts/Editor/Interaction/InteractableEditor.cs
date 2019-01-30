@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(Lalala))]
+[CustomEditor(typeof(Interactable))]
 public class InteractableEditor : EditorWithSubEditors<ConditionCollectionEditor, ConditionCollection>
 {
-    private Lalala interactable;
+    private Interactable interactable;
     private SerializedProperty interactionLocationProperty;
     private SerializedProperty collectionsProperty;
     private SerializedProperty defaultReactionCollectionProperty;
@@ -18,7 +18,7 @@ public class InteractableEditor : EditorWithSubEditors<ConditionCollectionEditor
 
     private void OnEnable ()
     {
-        interactable = (Lalala)target;
+        interactable = (Interactable)target;
 
         collectionsProperty = serializedObject.FindProperty(interactablePropConditionCollectionsName);
         interactionLocationProperty = serializedObject.FindProperty(interactablePropInteractionLocationName);

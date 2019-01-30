@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public float inputHoldDelay = 0.5f;
     
 
-    private Lalala currentInteractable;
+    private Interactable currentInteractable;
     private Vector3 destinationPosition;
     private bool handleInput = true;
     private WaitForSeconds inputHoldWait;
@@ -133,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    public void OnInteractableClick(Lalala interactable)
+    public void OnInteractableClick(Interactable interactable)
     {
         if(!handleInput)
             return;
