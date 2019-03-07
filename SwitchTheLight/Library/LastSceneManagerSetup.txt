@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/DarkScene.unity
+- path: Assets/Scenes/Memory_1.unity
   isLoaded: 1
   isActive: 1
