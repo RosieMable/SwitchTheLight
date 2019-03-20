@@ -3,14 +3,18 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEditor;
 
+
+//This script is similar to ConditionCollection Editor, hence it will not contain
+//annotations for components that are used in the same way here
+//It will, however, contain explenations of functions unique to this subeditor
 [CustomEditor(typeof(ReactionCollection))]
 public class ReactionCollectionEditor : EditorWithSubEditors<ReactionEditor, Reaction>
 {
     private ReactionCollection reactionCollection;
     private SerializedProperty reactionsProperty;
 
-    private Type[] reactionTypes;
-    private string[] reactionTypeNames;
+    private Type[] reactionTypes; //Reference to all the different types of reactions that you can have
+    private string[] reactionTypeNames; 
     private int selectedIndex;
 
 
@@ -24,11 +28,11 @@ public class ReactionCollectionEditor : EditorWithSubEditors<ReactionEditor, Rea
 
     private void OnEnable ()
     {
-        reactionCollection = (ReactionCollection)target;
+        reactionCollection = (ReactionCollection)target; //Caching the target of the editor
 
         reactionsProperty = serializedObject.FindProperty(reactionsPropName);
 
-        CheckAndCreateSubEditors (reactionCollection.reactions);
+        CheckAndCreateSubEditors (reactionCollection.reactions); //Creates the subeditors that are needed
 
         SetReactionNamesArray ();
     }
