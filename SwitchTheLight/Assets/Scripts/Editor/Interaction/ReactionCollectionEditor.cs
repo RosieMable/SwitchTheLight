@@ -67,6 +67,7 @@ public class ReactionCollectionEditor : EditorWithSubEditors<ReactionEditor, Rea
             EditorGUILayout.Space ();
         }
 
+        //Creating areas on the inspector that we can use
         Rect fullWidthRect = GUILayoutUtility.GetRect(GUIContent.none, GUIStyle.none, GUILayout.Height(dropAreaHeight + verticalSpacing));
 
         Rect leftAreaRect = fullWidthRect;
@@ -81,7 +82,7 @@ public class ReactionCollectionEditor : EditorWithSubEditors<ReactionEditor, Rea
         TypeSelectionGUI (leftAreaRect);
         DragAndDropAreaGUI (rightAreaRect);
 
-        DraggingAndDropping(rightAreaRect, this);
+        DraggingAndDropping(rightAreaRect, this); //Drag and drop reactions on the component
 
         serializedObject.ApplyModifiedProperties ();
     }
@@ -108,6 +109,7 @@ public class ReactionCollectionEditor : EditorWithSubEditors<ReactionEditor, Rea
 
     private static void DragAndDropAreaGUI (Rect containingRect)
     {
+        //Drawing a box on the GUI
         GUIStyle centredStyle = GUI.skin.box;
         centredStyle.alignment = TextAnchor.MiddleCenter;
         centredStyle.normal.textColor = GUI.skin.button.normal.textColor;
@@ -115,33 +117,38 @@ public class ReactionCollectionEditor : EditorWithSubEditors<ReactionEditor, Rea
         GUI.Box (containingRect, "Drop new Reactions here", centredStyle);
     }
 
-
+    
     private static void DraggingAndDropping (Rect dropArea, ReactionCollectionEditor editor)
     {
-        Event currentEvent = Event.current;
+        Event currentEvent = Event.current; //Caching the current event (what the mouse/keyboard is currently doing)
 
         if (!dropArea.Contains (currentEvent.mousePosition))
-            return;
+            return; //If the box doesn't contain any mouse interaction, then dont do anything
 
-        switch (currentEvent.type)
+        switch (currentEvent.type) //Switch case
         {
-            case EventType.DragUpdated:
+            case EventType.DragUpdated: //Already clicked on something in the editor and it is now dragging it on the drop area
 
-                DragAndDrop.visualMode = IsDragValid () ? DragAndDropVisualMode.Link : DragAndDropVisualMode.Rejected;
-                currentEvent.Use ();
+                //Is the drag valid?
+                DragAndDrop.visualMode = IsDragValid () ?
+                    DragAndDropVisualMode.Link : DragAndDropVisualMode.Rejected; //If the drag is valid, then visual mode is link, otherwise it is rejected
+                currentEvent.Use (); //Use the event
 
                 break;
-            case EventType.DragPerform:
+            case EventType.DragPerform: //The mouse button has been released, and now the component we have released it is trying to do something
                 
-                DragAndDrop.AcceptDrag();
+                DragAndDrop.AcceptDrag(); //Accept the release (it works only if the visual mode is link)
                 
+                //Loop through all the objects that have been dragged
                 for (int i = 0; i < DragAndDrop.objectReferences.Length; i++)
                 {
+                    //And cast them as a monoscript
                     MonoScript script = DragAndDrop.objectReferences[i] as MonoScript;
 
+                    //Looks for the type of the monoscript class (reaction type, since the drag and drop only accepts reactions)
                     Type reactionType = script.GetClass();
 
-                    Reaction newReaction = ReactionEditor.CreateReaction (reactionType);
+                    Reaction newReaction = ReactionEditor.CreateReaction (reactionType); //Creates a new reaction of that type
                     editor.reactionsProperty.AddToObjectArray (newReaction);
                 }
 
@@ -151,21 +158,21 @@ public class ReactionCollectionEditor : EditorWithSubEditors<ReactionEditor, Rea
         }
     }
 
-
+    //Function to determine if the drag is valid
     private static bool IsDragValid ()
     {
         for (int i = 0; i < DragAndDrop.objectReferences.Length; i++)
         {
             if (DragAndDrop.objectReferences[i].GetType () != typeof (MonoScript))
-                return false;
+                return false; //If the object is not a monoscript object, then return false
             
             MonoScript script = DragAndDrop.objectReferences[i] as MonoScript;
-            Type scriptType = script.GetClass ();
+            Type scriptType = script.GetClass (); //Get the class of the object
 
-            if (!scriptType.IsSubclassOf (typeof(Reaction)))
+            if (!scriptType.IsSubclassOf (typeof(Reaction))) //if it is not a reaction script, then return false
                 return false;
 
-            if (scriptType.IsAbstract)
+            if (scriptType.IsAbstract) //If the script is abstract, then return false
                 return false;
         }
 

@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController cc_PC;
     private float fl_initial_speed;
     public bool iswalking = false;
+    public Interactable currentInteractable;
 
     private bool bl_climbing;
     public GameObject go_PC_camera;
