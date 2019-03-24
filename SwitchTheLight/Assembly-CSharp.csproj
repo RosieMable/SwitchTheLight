@@ -63,7 +63,6 @@
   <ItemGroup>
     <Compile Include="Assets\A_Scripts\DialogueTrigger.cs" />
     <Compile Include="Assets\A_Scripts\PlayerController.cs" />
-    <Compile Include="Assets\A_Scripts\SoundEffects\FootSteps.cs" />
     <Compile Include="Assets\A_Scripts\UIDialogueManager.cs" />
     <Compile Include="Assets\MagicMirror\Demo\DemoScript.cs" />
     <Compile Include="Assets\MagicMirror\Prefab\MirrorCameraScript.cs" />
@@ -125,9 +124,11 @@
     <Compile Include="Assets\Scripts\MonoBehaviours\Interaction\ReactionCollection.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\Interaction\TextManager.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\Inventory\Inventory.cs" />
-    <Compile Include="Assets\Scripts\MonoBehaviours\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\SceneControl\SceneController.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\SceneControl\StartingPosition.cs" />
+    <Compile Include="Assets\Scripts\Player\FootSteps.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerLook.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\DataPersistence\SaveData.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Interaction\Abstracts\DelayedReaction.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Interaction\Abstracts\Reaction.cs" />
