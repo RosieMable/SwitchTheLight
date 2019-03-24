@@ -3,7 +3,7 @@ using UnityEditor; //It is an editor script
 
 //Abstract cause this is a base class, it cannot be instantieted by itself
 //The brachets are the types of the editor -> Type of editor and Type of Target
-public abstract class EditorWithSubEditors<TEditor, TTarget> : Editor //angle brakets to say what subeditor is targeting and what of that subeditor it is going to modify
+public abstract class EditorWithSubEditors<TEditor, TTarget> : Editor //angle brakets to say what subeditor is targeting and what that subeditor it is going to modify
     where TEditor : Editor //Needs to be something that inherets from the editor class
     where TTarget : Object
     //Where is a restriction on a generic type

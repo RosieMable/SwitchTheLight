@@ -1,6 +1,6 @@
 ﻿Shader "Custom/SphericalMask"
 {
-    Properties
+    Properties // PC - What does a property stand for and do
     {
         _Color ("Color", Color) = (1,1,1,1)
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
@@ -16,21 +16,21 @@
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
-        LOD 200
+        Tags { "RenderType"="Opaque" } // PC - What does this do
+        LOD 200 // PC - What does this do
 
-        CGPROGRAM
+        CGPROGRAM // PC - What does this stand for
         // Physically based Standard lighting model, and enable shadows on all light types
         #pragma surface surf Standard fullforwardshadows
 
         // Use shader model 3.0 target, to get nicer looking lighting
         #pragma target 3.0
 
-        sampler2D _MainTex, _EmissionTex;
+        sampler2D _MainTex, _EmissionTex; // PC - What is a sampler2D data type
 
-        struct Input
+        struct Input // PC - Define what a struct is
         {
-            float2 uv_MainTex;
+            float2 uv_MainTex; // PC - Why are we stating "float(x)"
 			float2 uv_EmissionTex;
 			float3 worldPos;
         };
@@ -68,11 +68,12 @@
 
 			//Spherical Mask
 			half d = distance(Mask_Position, IN.worldPos);
-			half sum = saturate((d - Mask_Radius) / -Mask_Softness);
+			half sum = saturate((d - Mask_Radius) / -Mask_Softness); //Saturates the color inside of the mask (the color of the objects is shown only inside the circle)
 			fixed4 lerpColor = lerp(fixed4(c_g, 1), c * _ColorStrength, sum);
 			fixed4 lerpEmission = lerp(fixed4(0, 0, 0, 0), e, sum);
 
 
+			//Assigning values to the object components
             o.Albedo = lerpColor.rgb;
             // Metallic and smoothness come from slider variables
             o.Metallic = _Metallic;

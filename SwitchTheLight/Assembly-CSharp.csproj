@@ -115,7 +115,6 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\RaycastMousePOs.cs" />
-    <Compile Include="Assets\Scripts\MonoBehaviours\Camera\CameraControl.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\DataPersistence\BehaviourEnableStateSaver.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\DataPersistence\DataResetter.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\DataPersistence\GameObjectActivitySaver.cs" />
