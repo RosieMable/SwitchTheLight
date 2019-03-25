@@ -13,6 +13,7 @@ public class TextManager : MonoBehaviour
 
 
     public Text text;
+    public Text textIntName;
     public float displayTimePerCharacter = 0.1f;
     public float additionalDisplayTime = 0.5f;
 
@@ -32,6 +33,7 @@ public class TextManager : MonoBehaviour
         else if (Time.time >= clearTime)
         {
             text.text = string.Empty;
+            textIntName.text = string.Empty;
         }
     }
 

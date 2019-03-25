@@ -14,6 +14,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float jumpMultiplier;
     [SerializeField] private KeyCode jumpKey;
 
+
+
     public bool isWalking = false;
 
 
@@ -22,6 +24,8 @@ public class PlayerMove : MonoBehaviour
     private void Awake()
     {
         charController = GetComponent<CharacterController>();
+
+
     }
 
     private void Update()
@@ -40,7 +44,7 @@ public class PlayerMove : MonoBehaviour
 
         charController.SimpleMove(forwardMovement + rightMovement);
 
-        if ( vertInput == 0 && horizInput == 0)
+        if (vertInput == 0 && horizInput == 0)
         {
             isWalking = false;
         }
@@ -80,4 +84,5 @@ public class PlayerMove : MonoBehaviour
         isJumping = false;
     }
 
-}
+
+    }

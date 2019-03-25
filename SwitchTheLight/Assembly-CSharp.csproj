@@ -64,6 +64,7 @@
     <Compile Include="Assets\A_Scripts\DialogueTrigger.cs" />
     <Compile Include="Assets\A_Scripts\PlayerController.cs" />
     <Compile Include="Assets\A_Scripts\UIDialogueManager.cs" />
+    <Compile Include="Assets\AS_Script\FieldOfView.cs" />
     <Compile Include="Assets\MagicMirror\Demo\DemoScript.cs" />
     <Compile Include="Assets\MagicMirror\Prefab\MirrorCameraScript.cs" />
     <Compile Include="Assets\MagicMirror\Prefab\MirrorReflectionScript.cs" />

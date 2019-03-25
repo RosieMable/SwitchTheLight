@@ -1,46 +1,52 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
     public Transform interactionLocation;
     public ConditionCollection[] conditionCollections = new ConditionCollection[0];
     public ReactionCollection defaultReactionCollection;
+    public bool isCooldown = false;
+    private int interaction;
 
-
-    GameObject PCPos;
-
-    private void Start()
-    {
-        PCPos = GameObject.FindGameObjectWithTag("Player");
-
-    }
 
     public void Interact ()
     {
-        Debug.Log("LALALALA");
-
-        for (int i = 0; i < conditionCollections.Length; i++)
+        for (interaction = 0; interaction < 1; interaction++)
         {
-            if (conditionCollections[i].CheckAndReact ())
-                return;
-        }
-
-        defaultReactionCollection.React ();
-    }
-
-    private void Update()
-    {
-        float distance = Vector3.Distance(transform.position, PCPos.transform.position);
-        print(distance);
-
-        if (distance <= 20)
-        {
-            if (Input.GetKey(KeyCode.E))
+            if (isCooldown == false)
             {
-                print("MEOW");
-                Interact();
+                for (int i = 0; i < conditionCollections.Length; i++)
+                {
+                    if (conditionCollections[i].CheckAndReact())
+                        return;
+                }
+                defaultReactionCollection.React();
+                interaction++;
+                StartCoroutine(CoolDown(3));
+            }
+            else
+            {
+                continue;
             }
         }
 
     }
+
+    IEnumerator CoolDown(float timer)
+    {
+        isCooldown = true;
+        print("cooldown...");
+
+        yield return new WaitForSeconds(timer);
+
+        isCooldown = false;
+        interaction = 0;
+        print("Ready To use");
+
+        yield return null;
+    }
+
+  
+
 }
