@@ -17,13 +17,7 @@ public class FieldOfView : MonoBehaviour {
 
     private TextManager textManager;
 
-    private bool IscoolDown = false;
-
-    private float coolDown = 3;
-
     private float NextInteractionTimer;
-
-    public UnityEvent Event;
 
     //Creates a list of the targets that have been detected, it will be used to understand in which state the enemy is
     public List<Transform> visibleTargets = new List<Transform>();

@@ -91,6 +91,7 @@ ModelImporter:
     9500000: //RootNode
     10800000: Omni01
     10800002: Spot01
+    2186277476908879412: ImportLogs
     6000828045688606266: Camera01
   externalObjects: {}
   materials:
@@ -126,6 +127,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -150,6 +152,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
