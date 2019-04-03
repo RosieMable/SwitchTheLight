@@ -33,7 +33,6 @@ public class TextManager : MonoBehaviour
         else if (Time.time >= clearTime)
         {
             text.text = string.Empty;
-            textIntName.text = string.Empty;
         }
     }
 

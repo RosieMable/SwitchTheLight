@@ -29,16 +29,14 @@ public class FieldOfView : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        StartCoroutine("FindTargetsWithDelay", .2f);
+        StartCoroutine(FindTargetsWithDelay(0.2f));
     }
 
     IEnumerator FindTargetsWithDelay (float fl_delay)
     {
-        while (true)
-        {
+
             yield return new WaitForSeconds(fl_delay);
             FindVisibleTargets();
-        }
 
 
     }
@@ -75,13 +73,15 @@ public class FieldOfView : MonoBehaviour {
                             }
 
                     }
-                else if (visibleTargets == null)
-                {
-                    textManager.textIntName.text = " ";
+  
                 }
             }
-            }
-      
+
+        if (visibleTargets.Count <= 0)
+        {
+            textManager.textIntName.text = string.Empty;
+        }
+
     }
 
 
