@@ -14,7 +14,7 @@ public class SceneController : MonoBehaviour
     //It is also used because during the fading the player shouldn't be able to do anything and the canvas group allows to block every raycast
     public float fadeDuration = 1f; //Fade duration - how long it takes to go from transparent to black and viceversa
     public string startingSceneName = ""; //Reference to the starting scene, so it is certain that the system loads the correct one
-    public string initialStartingPositionName = ""; 
+    //public string initialStartingPositionName = ""; 
     public SaveData playerSaveData;
     
     
@@ -97,4 +97,5 @@ public class SceneController : MonoBehaviour
         isFading = false;
         faderCanvasGroup.blocksRaycasts = false;
     }
+
 }

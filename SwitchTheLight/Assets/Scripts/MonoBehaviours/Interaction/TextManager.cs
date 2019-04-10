@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class TextManager : MonoBehaviour
 {
+
     public struct Instruction
     {
         public string message;
@@ -17,10 +18,23 @@ public class TextManager : MonoBehaviour
     public float displayTimePerCharacter = 0.1f;
     public float additionalDisplayTime = 0.5f;
 
-
     private List<Instruction> instructions = new List<Instruction> ();
     private float clearTime;
 
+    private SceneController sceneController;
+
+    private void Awake()
+    {
+        sceneController = FindObjectOfType<SceneController>();
+
+        if (!sceneController)
+            throw new UnityException("Scene Controller could not be found, ensure that it exists in the Persistent scene.");
+    }
+
+    private void OnEnable()
+    {
+        sceneController.BeforeSceneUnload += DeActivateText;
+    }
 
     private void Update ()
     {
@@ -81,5 +95,17 @@ public class TextManager : MonoBehaviour
                 break;
         }
     }
+
+    void DeActivateText()
+    {
+        text.text = string.Empty;
+        textIntName.text = string.Empty;
+    }
+
+    private void OnDisable()
+    {
+        sceneController.BeforeSceneUnload -= DeActivateText;
+    }
+
 }
 

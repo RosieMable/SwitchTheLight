@@ -80,6 +80,7 @@ public class FieldOfView : MonoBehaviour {
         if (visibleTargets.Count <= 0)
         {
             textManager.textIntName.text = string.Empty;
+
         }
 
     }
