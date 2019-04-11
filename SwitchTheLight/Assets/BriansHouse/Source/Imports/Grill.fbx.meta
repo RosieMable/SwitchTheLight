@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 3eb64dbf03c77c0478dad82de017ff40
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cylinder
+    100002: Cylinder.001
+    100004: Cylinder.002
+    100006: //RootNode
+    100008: Plane
+    100010: Pot1.001
+    100012: Pot1.002
+    100014: Sphere
+    100016: Grill_LOD0
+    100018: Grill_LOD1
+    400000: Cylinder
+    400002: Cylinder.001
+    400004: Cylinder.002
+    400006: //RootNode
+    400008: Plane
+    400010: Pot1.001
+    400012: Pot1.002
+    400014: Sphere
+    400016: Grill_LOD0
+    400018: Grill_LOD1
+    2300000: Cylinder
+    2300002: Cylinder.001
+    2300004: Cylinder.002
+    2300006: Plane
+    2300008: Pot1.001
+    2300010: Pot1.002
+    2300012: Sphere
+    2300014: //RootNode
+    2300016: Grill_LOD0
+    2300018: Grill_LOD1
+    3300000: Cylinder
+    3300002: Cylinder.001
+    3300004: Cylinder.002
+    3300006: Plane
+    3300008: Pot1.001
+    3300010: Pot1.002
+    3300012: Sphere
+    3300014: //RootNode
+    3300016: Grill_LOD0
+    3300018: Grill_LOD1
+    4300000: Cylinder.002
+    4300002: Pot1.001
+    4300004: Cylinder.001
+    4300006: Plane
+    4300008: Cylinder
+    4300010: Sphere
+    4300012: Pot1.002
+    4300014: Grill
+    4300016: Grill_LOD1
+    4300018: Grill_LOD0
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Aluminium
+    second: {fileID: 2100000, guid: ff83678c38610bb45b905167759837ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GreyMetal
+    second: {fileID: 2100000, guid: f409a1a2d84a39045ad20b8dafa92055, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plexi
+    second: {fileID: 2100000, guid: 505e1fa94d5246a4a97dd4fbe6f52a80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Props2
+    second: {fileID: 2100000, guid: 1e1a63a3bbf9eca40b505e03a4a4aa7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShinyMetal
+    second: {fileID: 2100000, guid: 8bcea6374a1298945af56ec20dab22e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhitePlastic
+    second: {fileID: 2100000, guid: 36a615301e5eb5b4583d4605e3515a7f, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.01
+    globalScale: 2.5
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
