@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: AllConditions
   m_EditorClassIdentifier: 
   conditions:
-  - {fileID: 114762356420137242}
   - {fileID: 114563175002664540}
   - {fileID: 114047351027282230}
   - {fileID: 114349955952862052}
   - {fileID: 114763177366975336}
   - {fileID: 114552140925141410}
+  - {fileID: 114356560262146646}
 --- !u!114 &114047351027282230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,6 +49,21 @@ MonoBehaviour:
   description: WindowChecked
   satisfied: 1
   hash: -834293093
+--- !u!114 &114356560262146646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: '[M1] MirrorActivated'
+  m_EditorClassIdentifier: 
+  description: '[M1] MirrorActivated'
+  satisfied: 1
+  hash: 576257161
 --- !u!114 &114552140925141410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +77,7 @@ MonoBehaviour:
   m_Name: '[M1] TeddyHugged'
   m_EditorClassIdentifier: 
   description: '[M1] TeddyHugged'
-  satisfied: 0
+  satisfied: 1
   hash: -1863266999
 --- !u!114 &114563175002664540
 MonoBehaviour:
@@ -79,21 +94,6 @@ MonoBehaviour:
   description: MirrorChecked
   satisfied: 1
   hash: -2036212832
---- !u!114 &114762356420137242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
-  m_Name: Escapes
-  m_EditorClassIdentifier: 
-  description: Escapes
-  satisfied: 0
-  hash: -560549888
 --- !u!114 &114763177366975336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,5 +107,5 @@ MonoBehaviour:
   m_Name: '[M1] TeddyChecked'
   m_EditorClassIdentifier: 
   description: '[M1] TeddyChecked'
-  satisfied: 0
+  satisfied: 1
   hash: -869933322

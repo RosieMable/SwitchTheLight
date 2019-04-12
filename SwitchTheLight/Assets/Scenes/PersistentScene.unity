@@ -847,6 +847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2047512501}
   - component: {fileID: 2047512502}
+  - component: {fileID: 2047512503}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -883,3 +884,18 @@ MonoBehaviour:
   CameraProfiles:
   - {fileID: 11400000, guid: 3aba5b0626990724c8b7d1a8761344d5, type: 2}
   - {fileID: 11400000, guid: 0eaf99c7221be354390ae59084490a33, type: 2}
+--- !u!114 &2047512503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047512500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c91b699634ffb4d8adb3f3393588e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resettableScriptableObjects:
+  - {fileID: 11400000, guid: 2f408be76e166904d8b71fbc5b455619, type: 2}
+  - {fileID: 11400000, guid: 7d6ffd49cb0de9a4d887b5dd0822f626, type: 2}
