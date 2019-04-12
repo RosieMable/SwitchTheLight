@@ -61,10 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BriansHouse\Source\Editor\BHEditor.cs" />
-    <Compile Include="Assets\BriansHouse\Source\Editor\BriansEditorWindow.cs" />
-    <Compile Include="Assets\BriansHouse\Source\Editor\DTEditor.cs" />
-    <Compile Include="Assets\BriansHouse\Source\Editor\InteractEditor.cs" />
     <Compile Include="Assets\Editor\FieldOfViewEditor.cs" />
     <Compile Include="Assets\MagicMirror\Prefab\Editor\MagicMirrorEditor.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />

@@ -61,15 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BriansHouse\Source\Scripts\BriansEngine.cs" />
-    <Compile Include="Assets\BriansHouse\Source\Scripts\BriansHouse.cs" />
-    <Compile Include="Assets\BriansHouse\Source\Scripts\Destructible.cs" />
-    <Compile Include="Assets\BriansHouse\Source\Scripts\DoorStateChecker.cs" />
-    <Compile Include="Assets\BriansHouse\Source\Scripts\DoorTrigger.cs" />
-    <Compile Include="Assets\BriansHouse\Source\Scripts\Interactions.cs" />
-    <Compile Include="Assets\BriansHouse\Source\Scripts\Keys.cs" />
-    <Compile Include="Assets\BriansHouse\Source\Scripts\Lightswitch.cs" />
-    <Compile Include="Assets\BriansHouse\Source\Scripts\Pickupable.cs" />
     <Compile Include="Assets\MagicMirror\Demo\DemoScript.cs" />
     <Compile Include="Assets\MagicMirror\Prefab\MirrorCameraScript.cs" />
     <Compile Include="Assets\MagicMirror\Prefab\MirrorReflectionScript.cs" />

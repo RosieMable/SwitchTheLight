@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17047316, g: 0.19032192, b: 0.3413082, a: 1}
+  m_IndirectSpecularColor: {r: 0.1424652, g: 0.15948454, b: 0.28627735, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -178,6 +178,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &298424750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Why...Why am I not there?
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 3
 --- !u!1001 &335317803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -188,6 +203,10 @@ PrefabInstance:
     - target: {fileID: 123684, guid: 977d462d3da090443aa549827d636355, type: 3}
       propertyPath: m_Name
       value: Mirror
+      objectReference: {fileID: 0}
+    - target: {fileID: 123684, guid: 977d462d3da090443aa549827d636355, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 423996, guid: 977d462d3da090443aa549827d636355, type: 3}
       propertyPath: m_LocalPosition.x
@@ -233,6 +252,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 423996, guid: 977d462d3da090443aa549827d636355, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.81
+      objectReference: {fileID: 0}
     - target: {fileID: 11435476, guid: 977d462d3da090443aa549827d636355, type: 3}
       propertyPath: AddFlareLayer
       value: 1
@@ -253,6 +276,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 977d462d3da090443aa549827d636355, type: 3}
+--- !u!1 &335317804 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 123684, guid: 977d462d3da090443aa549827d636355,
+    type: 3}
+  m_PrefabInstance: {fileID: 335317803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &335317805 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 423996, guid: 977d462d3da090443aa549827d636355,
+    type: 3}
+  m_PrefabInstance: {fileID: 335317803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &335317806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335317804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionLocation: {fileID: 335317805}
+  conditionCollections:
+  - {fileID: 898518850}
+  defaultReactionCollection: {fileID: 917355428}
+  isCooldown: 0
 --- !u!1 &367291570
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,6 +476,53 @@ MonoBehaviour:
   message: I used to have one of these...
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
+--- !u!1 &540288963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 540288965}
+  - component: {fileID: 540288964}
+  m_Layer: 9
+  m_Name: ConditionReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &540288964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540288963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 554938520}
+  - {fileID: 2131404756}
+  - {fileID: 1841557038}
+--- !u!4 &540288965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540288963}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 335317805}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &554771214
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,6 +614,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &554938520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Even a mirror refuses to reflect me...
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1 &572113501
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,6 +1025,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &812812080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: This stupid mirror...
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1 &868866150
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,6 +1089,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &898518850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: WallsOnPlayer
+  requiredConditions:
+  - {fileID: 2065334636}
+  ReactionCollection: {fileID: 540288964}
+--- !u!1 &917355427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 917355429}
+  - component: {fileID: 917355428}
+  m_Layer: 9
+  m_Name: DefaultInteraction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &917355428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917355427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 812812080}
+  - {fileID: 298424750}
+--- !u!4 &917355429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917355427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 335317805}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &921630448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1005,7 +1196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4410843128935598, guid: c3eb64e478b2bb748ae1501daf818368, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4410843128935598, guid: c3eb64e478b2bb748ae1501daf818368, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1490,6 +1681,21 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   audioClip: {fileID: 0}
   delay: 0
+--- !u!114 &1841557038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2392585f8a4e53a42a0ddc8de25e64d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 367291571}
+  audioClip: {fileID: 8300000, guid: c7dbd3a82ce57d143ad0b43045cbdf01, type: 3}
+  delay: 4
 --- !u!1 &1868181359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,6 +1959,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c9b3255ae2c3f64c8eb370d5cdce3bd, type: 3}
+--- !u!114 &2065334636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: '[M1] TeddyChecked'
+  satisfied: 1
+  hash: -869933322
 --- !u!1 &2072504155 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: c98458455be827c41a2536fc1affd2e8,
@@ -1794,3 +2015,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1443152713}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2131404756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Who am I, then...?
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 3
