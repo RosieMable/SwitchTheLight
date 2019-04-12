@@ -14,9 +14,14 @@ public class GameManager : MonoBehaviour
 
     private SceneController SceneController;
 
+    private GameObject Player;
+
+    private StartingPosition StartingPos;
+
     private void OnEnable()
     {
         SceneController.AfterSceneLoad += CheckCameraPostProcessing;
+        SceneController.AfterSceneLoad += FindStartingPosForPlayer;
     }
 
     private void Awake()
@@ -27,6 +32,9 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
         }
+
+        Player = FindObjectOfType<PlayerMove>().gameObject;
+        StartingPos = FindObjectOfType<StartingPosition>();
     }
 
     // Start is called before the first frame update
@@ -58,8 +66,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void FindStartingPosForPlayer()
+    {
+        Transform newPCPos = StartingPosition.FindStartingPosition(StartingPos.startingPointName);
+        print(newPCPos.gameObject.name);
+
+        Player.transform.position = newPCPos.position;
+    }
+
     private void OnDisable()
     {
         SceneController.AfterSceneLoad -= CheckCameraPostProcessing;
+        SceneController.AfterSceneLoad -= FindStartingPosForPlayer;
+
     }
 }

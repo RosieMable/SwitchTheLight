@@ -33,6 +33,7 @@ public class Interactable : MonoBehaviour
 
     }
 
+
     IEnumerator CoolDown(float timer)
     {
         isCooldown = true;

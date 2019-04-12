@@ -127,6 +127,7 @@
     <Compile Include="Assets\Scripts\MonoBehaviours\DataPersistence\RotationSaver.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\DataPersistence\Saver.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\Interaction\Interactable.cs" />
+    <Compile Include="Assets\Scripts\MonoBehaviours\Interaction\InteractionsOneTime.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\Interaction\ReactionCollection.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\Interaction\TextManager.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\Inventory\Inventory.cs" />
@@ -166,6 +167,7 @@
     <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
     <None Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+    <None Include="Assets\AS_Graphics\ImportantItems\3DTOYS\readme.txt" />
     <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />

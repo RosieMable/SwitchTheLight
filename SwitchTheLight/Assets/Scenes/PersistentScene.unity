@@ -406,6 +406,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PC 1 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2056320430589848178, guid: 060eba17d03b6644483fd2d5d7798ae4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2056320430589848177, guid: 060eba17d03b6644483fd2d5d7798ae4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -466,6 +471,24 @@ PrefabInstance:
       propertyPath: movementSpeed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2056320430636969823, guid: 060eba17d03b6644483fd2d5d7798ae4,
+        type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056320430772722032, guid: 060eba17d03b6644483fd2d5d7798ae4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 347256493, guid: 060eba17d03b6644483fd2d5d7798ae4, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 705467804, guid: 060eba17d03b6644483fd2d5d7798ae4, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1707022621810503821, guid: 060eba17d03b6644483fd2d5d7798ae4,
         type: 3}
       propertyPath: viewRadius
@@ -476,17 +499,22 @@ PrefabInstance:
       propertyPath: viewAngle
       value: 47
       objectReference: {fileID: 0}
+    - target: {fileID: 2056320430636969821, guid: 060eba17d03b6644483fd2d5d7798ae4,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 5943
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056320430636969821, guid: 060eba17d03b6644483fd2d5d7798ae4,
+        type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2056320430636969816, guid: 060eba17d03b6644483fd2d5d7798ae4,
         type: 3}
       propertyPath: profile
       value: 
       objectReference: {fileID: 11400000, guid: 3aba5b0626990724c8b7d1a8761344d5,
         type: 2}
-    - target: {fileID: 2056320430636969823, guid: 060eba17d03b6644483fd2d5d7798ae4,
-        type: 3}
-      propertyPath: m_TagString
-      value: MainCamera
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 060eba17d03b6644483fd2d5d7798ae4, type: 3}
 --- !u!1 &1670508977
@@ -499,6 +527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1670508979}
   - component: {fileID: 1670508978}
+  - component: {fileID: 1670508980}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -536,6 +565,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1670508980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670508977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a1a9400b6609fb4aba06d78b45ca76c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPointName: Bed
 --- !u!1 &1729658850
 GameObject:
   m_ObjectHideFlags: 0
