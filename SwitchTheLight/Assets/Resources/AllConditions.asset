@@ -19,6 +19,8 @@ MonoBehaviour:
   - {fileID: 114763177366975336}
   - {fileID: 114552140925141410}
   - {fileID: 114356560262146646}
+  - {fileID: 114790284101757568}
+  - {fileID: 114970734925271354}
 --- !u!114 &114047351027282230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,7 +79,7 @@ MonoBehaviour:
   m_Name: '[M1] TeddyHugged'
   m_EditorClassIdentifier: 
   description: '[M1] TeddyHugged'
-  satisfied: 1
+  satisfied: 0
   hash: -1863266999
 --- !u!114 &114563175002664540
 MonoBehaviour:
@@ -109,3 +111,33 @@ MonoBehaviour:
   description: '[M1] TeddyChecked'
   satisfied: 1
   hash: -869933322
+--- !u!114 &114790284101757568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: '[M1] BadEnding'
+  m_EditorClassIdentifier: 
+  description: '[M1] BadEnding'
+  satisfied: 0
+  hash: 24314482
+--- !u!114 &114970734925271354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: '[M1] GoodEnding'
+  m_EditorClassIdentifier: 
+  description: '[M1] GoodEnding'
+  satisfied: 0
+  hash: -1532371319

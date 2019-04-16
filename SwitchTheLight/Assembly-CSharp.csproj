@@ -65,7 +65,6 @@
     <Compile Include="Assets\MagicMirror\Prefab\MirrorCameraScript.cs" />
     <Compile Include="Assets\MagicMirror\Prefab\MirrorReflectionScript.cs" />
     <Compile Include="Assets\MagicMirror\Prefab\MirrorScript.cs" />
-    <Compile Include="Assets\MoveTowards.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -111,6 +110,12 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\Scripts\_OtherScripts\MoveTowards.cs" />
+    <Compile Include="Assets\Scripts\_OtherScripts\OnPlayerCollisionReaction.cs" />
+    <Compile Include="Assets\Scripts\_OtherScripts\RaycastMousePos.cs" />
+    <Compile Include="Assets\Scripts\_OtherScripts\RegainColour.cs" />
+    <Compile Include="Assets\Scripts\_OtherScripts\Stalking.cs" />
+    <Compile Include="Assets\Scripts\_OtherScripts\StalkingActivator.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\DataPersistence\BehaviourEnableStateSaver.cs" />
     <Compile Include="Assets\Scripts\MonoBehaviours\DataPersistence\DataResetter.cs" />
@@ -130,7 +135,6 @@
     <Compile Include="Assets\Scripts\Player\FootSteps.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerLook.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
-    <Compile Include="Assets\Scripts\RaycastMousePOs.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\DataPersistence\SaveData.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Interaction\Abstracts\DelayedReaction.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjects\Interaction\Abstracts\Reaction.cs" />
