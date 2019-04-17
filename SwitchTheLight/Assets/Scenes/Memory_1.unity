@@ -223,21 +223,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &214094413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: '[M1] TeddyHugged'
-  satisfied: 1
-  hash: -1863266999
 --- !u!1 &247602047
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 423996, guid: 977d462d3da090443aa549827d636355, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.21
+      value: 10.91
       objectReference: {fileID: 0}
     - target: {fileID: 423996, guid: 977d462d3da090443aa549827d636355, type: 3}
       propertyPath: m_LocalRotation.x
@@ -644,21 +629,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &443374379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: '[M1] BadEnding'
-  satisfied: 0
-  hash: 24314482
 --- !u!114 &456120456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,7 +844,7 @@ GameObject:
   - component: {fileID: 554771215}
   - component: {fileID: 554771219}
   - component: {fileID: 554771220}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1335,7 +1305,7 @@ GameObject:
   - component: {fileID: 799682009}
   - component: {fileID: 799682008}
   - component: {fileID: 799682012}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1792,7 +1762,6 @@ MonoBehaviour:
   interactionLocation: {fileID: 921630450}
   conditionCollections:
   - {fileID: 854605985}
-  - {fileID: 1930267734}
   defaultReactionCollection: {fileID: 785208841}
   isCooldown: 0
 --- !u!114 &921630453
@@ -1822,7 +1791,7 @@ GameObject:
   - component: {fileID: 1016834601}
   - component: {fileID: 1016834605}
   - component: {fileID: 1016834606}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2533,7 +2502,7 @@ GameObject:
   - component: {fileID: 1868181360}
   - component: {fileID: 1868181364}
   - component: {fileID: 1868181365}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2712,23 +2681,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &1930267734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: GoodEnding
-  requiredConditions:
-  - {fileID: 443374379}
-  - {fileID: 214094413}
-  ReactionCollection: {fileID: 320098313}
 --- !u!114 &1951270145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3124,7 +3076,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112938527}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.08856545, y: -0.39625, z: -0.1732502}
+  m_LocalPosition: {x: 0.08856545, y: -0.49, z: -0.1732502}
   m_LocalScale: {x: 0.25600007, y: 0.25, z: 1.001286}
   m_Children: []
   m_Father: {fileID: 335317805}
@@ -3162,7 +3114,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112938527}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

@@ -21,6 +21,7 @@ MonoBehaviour:
   - {fileID: 114356560262146646}
   - {fileID: 114790284101757568}
   - {fileID: 114970734925271354}
+  - {fileID: 114906003311344214}
 --- !u!114 &114047351027282230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,7 +50,7 @@ MonoBehaviour:
   m_Name: WindowChecked
   m_EditorClassIdentifier: 
   description: WindowChecked
-  satisfied: 1
+  satisfied: 0
   hash: -834293093
 --- !u!114 &114356560262146646
 MonoBehaviour:
@@ -64,7 +65,7 @@ MonoBehaviour:
   m_Name: '[M1] MirrorActivated'
   m_EditorClassIdentifier: 
   description: '[M1] MirrorActivated'
-  satisfied: 1
+  satisfied: 0
   hash: 576257161
 --- !u!114 &114552140925141410
 MonoBehaviour:
@@ -94,7 +95,7 @@ MonoBehaviour:
   m_Name: MirrorChecked
   m_EditorClassIdentifier: 
   description: MirrorChecked
-  satisfied: 1
+  satisfied: 0
   hash: -2036212832
 --- !u!114 &114763177366975336
 MonoBehaviour:
@@ -109,7 +110,7 @@ MonoBehaviour:
   m_Name: '[M1] TeddyChecked'
   m_EditorClassIdentifier: 
   description: '[M1] TeddyChecked'
-  satisfied: 1
+  satisfied: 0
   hash: -869933322
 --- !u!114 &114790284101757568
 MonoBehaviour:
@@ -126,6 +127,21 @@ MonoBehaviour:
   description: '[M1] BadEnding'
   satisfied: 0
   hash: 24314482
+--- !u!114 &114906003311344214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: DoorChecked
+  m_EditorClassIdentifier: 
+  description: DoorChecked
+  satisfied: 0
+  hash: -1081671547
 --- !u!114 &114970734925271354
 MonoBehaviour:
   m_ObjectHideFlags: 0
