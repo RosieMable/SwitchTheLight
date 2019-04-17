@@ -22,6 +22,7 @@ MonoBehaviour:
   - {fileID: 114790284101757568}
   - {fileID: 114970734925271354}
   - {fileID: 114906003311344214}
+  - {fileID: 114149874262304070}
 --- !u!114 &114047351027282230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37,6 +38,21 @@ MonoBehaviour:
   description: DeskChecked
   satisfied: 0
   hash: -2119890135
+--- !u!114 &114149874262304070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: '[M1] RealRoomDisplayed'
+  m_EditorClassIdentifier: 
+  description: '[M1] RealRoomDisplayed'
+  satisfied: 0
+  hash: -1538276650
 --- !u!114 &114349955952862052
 MonoBehaviour:
   m_ObjectHideFlags: 0

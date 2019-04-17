@@ -3,7 +3,7 @@
     public string sceneName;
     public string startingPointInLoadedScene;
     public SaveData playerSaveData;
-
+    public float delay;
 
     private SceneController sceneController;
 
@@ -16,6 +16,6 @@
 
     protected override void ImmediateReaction()
     {
-        sceneController.FadeAndLoadScene (this);
+        sceneController.FadeAndLoadSceneWithDelay (this, delay);
     }
 }
