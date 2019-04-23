@@ -207,4 +207,5 @@ public class ReactionCollectionEditor : EditorWithSubEditors<ReactionEditor, Rea
 
         reactionTypeNames = reactionTypeNameList.ToArray();
     }
+
 }

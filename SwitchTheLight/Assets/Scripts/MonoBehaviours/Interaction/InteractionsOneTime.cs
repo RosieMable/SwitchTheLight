@@ -28,6 +28,7 @@ public class InteractionsOneTime : MonoBehaviour
             reaction.React();
             Once = false;
             Panel.blocksRaycasts = false;
+            gameObject.SetActive(false);
         }
     }
 }
