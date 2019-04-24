@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.4964127, b: 0.57481724, a: 1}
+  m_IndirectSpecularColor: {r: 0.016642462, g: 0.008355861, b: 0.0020740833, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -253,6 +253,52 @@ Transform:
   - {fileID: 1343317234}
   m_Father: {fileID: 0}
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &66041313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 66041315}
+  - component: {fileID: 66041314}
+  m_Layer: 0
+  m_Name: JustAwake
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &66041314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66041313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactions:
+  - {fileID: 1933807651}
+  - {fileID: 1758192721}
+--- !u!4 &66041315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66041313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1518533455}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &112656517
 GameObject:
@@ -536,7 +582,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reactions: []
+  reactions:
+  - {fileID: 1378549548}
 --- !u!1001 &431146177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -756,6 +803,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 458221134}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &564033056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114179538961248534, guid: 2f408be76e166904d8b71fbc5b455619,
+    type: 2}
+  satisfied: 1
 --- !u!114 &585092474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2122,6 +2184,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1294698568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: I think I can sleep again now...
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1 &1343317232
 GameObject:
   m_ObjectHideFlags: 0
@@ -2227,7 +2304,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionLocation: {fileID: 1370337602}
-  conditionCollections: []
+  conditionCollections:
+  - {fileID: 1654313417}
   defaultReactionCollection: {fileID: 1437500067}
   isCooldown: 0
 --- !u!4 &1370337602
@@ -2247,6 +2325,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1378549548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: '[PutSomethingHere]'
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!1 &1385915022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2412,7 +2505,7 @@ PrefabInstance:
     - target: {fileID: 8785764733563428432, guid: 3a408d12bac52d04b9f8cba29000b317,
         type: 3}
       propertyPath: m_Name
-      value: Conditionreaction
+      value: ToMemory2
       objectReference: {fileID: 0}
     - target: {fileID: 4421872029715480267, guid: 3a408d12bac52d04b9f8cba29000b317,
         type: 3}
@@ -2511,7 +2604,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reactions: []
+  reactions:
+  - {fileID: 1294698568}
+  - {fileID: 1972429283}
 --- !u!1 &1447623944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2543,6 +2638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 23951644}
+  - {fileID: 1584318012}
 --- !u!4 &1447623946
 Transform:
   m_ObjectHideFlags: 0
@@ -2610,6 +2706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: df1666880554cd446af9d788cc7a7a19, type: 3}
+    - {fileID: 6400000, guid: df1666880554cd446af9d788cc7a7a19, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: df1666880554cd446af9d788cc7a7a19, type: 3}
 --- !u!4 &1509632914 stripped
 Transform:
@@ -2617,6 +2714,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1509632913}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1509632915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: df1666880554cd446af9d788cc7a7a19,
+    type: 3}
+  m_PrefabInstance: {fileID: 1509632913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1509632916
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509632915}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.696522, y: 3.170072, z: 3.7238271}
+  m_Center: {x: 0, y: 1.593061, z: 0.0000009536743}
 --- !u!1001 &1516979404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2685,6 +2801,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1516979404}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1518533453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1518533455}
+  - component: {fileID: 1518533454}
+  m_Layer: 0
+  m_Name: OneTimeReaction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1518533454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518533453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f1c8a79156d9684ba64a6a5f0e82656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Once: 1
+  reaction: {fileID: 66041314}
+--- !u!4 &1518533455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518533453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.792377, y: 2.293438, z: 10.4943695}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 66041315}
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1541650117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2731,6 +2893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 1836825224}
+  - {fileID: 564033056}
 --- !u!4 &1544350910
 Transform:
   m_ObjectHideFlags: 0
@@ -2745,6 +2908,21 @@ Transform:
   m_Father: {fileID: 657825572}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1584318012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec43236ba6522584894ac80bfbcb3815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  condition: {fileID: 114179538961248534, guid: 2f408be76e166904d8b71fbc5b455619,
+    type: 2}
+  satisfied: 1
 --- !u!1001 &1623064430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2819,6 +2997,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1623064430}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1654313417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: ToMemory2
+  requiredConditions:
+  - {fileID: 1727420564}
+  ReactionCollection: {fileID: 1438283235}
 --- !u!1 &1683864082
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,6 +3104,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1727420564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: '[AM1]BooksChecked'
+  satisfied: 1
+  hash: -1001569026
 --- !u!114 &1728938372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3031,6 +3240,21 @@ MonoBehaviour:
   message: 
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
+--- !u!114 &1758192721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: "But my heart is pounding, \nI will do something first."
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 5
 --- !u!1001 &1791254439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3534,6 +3758,23 @@ MonoBehaviour:
   description: '[M1] GoodEnding'
   satisfied: 1
   hash: -1532371319
+--- !u!114 &1933807651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: 'What a weird dream...!
+
+    It is still dark, I could go back to sleep.'
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
 --- !u!114 &1948135942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3548,6 +3789,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: Why would I want to go outside!?
   textColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
+--- !u!114 &1972429283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24dc6b17b276d6948903ade30dec71eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Memory_2
+  startingPointInLoadedScene: M2StartPoint
+  playerSaveData: {fileID: 11400000, guid: 7d6ffd49cb0de9a4d887b5dd0822f626, type: 2}
   delay: 0
 --- !u!1001 &2001926674
 PrefabInstance:
@@ -3650,7 +3907,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.54018337, g: 0.55977416, b: 0.5754717, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -3685,13 +3942,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008182468}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.17543441, y: 0.28491306, z: 0.0066715837, w: -0.942339}
+  m_LocalPosition: {x: 47.73, y: 1.73, z: 30.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 340.462, y: -34.562, z: 5.321}
 --- !u!1 &2106917193
 GameObject:
   m_ObjectHideFlags: 0

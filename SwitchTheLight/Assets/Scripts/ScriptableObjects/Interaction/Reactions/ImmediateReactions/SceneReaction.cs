@@ -6,7 +6,7 @@
     public float delay;
 
     private SceneController sceneController;
-
+    private StartingPosition startPos;
 
     protected override void SpecificInit()
     {
@@ -16,6 +16,7 @@
 
     protected override void ImmediateReaction()
     {
+        StartingPosition.FindStartingPosition(startingPointInLoadedScene);
         sceneController.FadeAndLoadSceneWithDelay (this, delay);
     }
 }

@@ -23,6 +23,10 @@ MonoBehaviour:
   - {fileID: 114970734925271354}
   - {fileID: 114906003311344214}
   - {fileID: 114149874262304070}
+  - {fileID: 114598325114964706}
+  - {fileID: 114290002602862228}
+  - {fileID: 114595765378543212}
+  - {fileID: 114179538961248534}
 --- !u!114 &114047351027282230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,6 +57,36 @@ MonoBehaviour:
   description: '[M1] RealRoomDisplayed'
   satisfied: 0
   hash: -1538276650
+--- !u!114 &114179538961248534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: '[AM1]BooksChecked'
+  m_EditorClassIdentifier: 
+  description: '[AM1]BooksChecked'
+  satisfied: 0
+  hash: -1001569026
+--- !u!114 &114290002602862228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: '[M2]GoodEnding'
+  m_EditorClassIdentifier: 
+  description: '[M2]GoodEnding'
+  satisfied: 0
+  hash: 602060877
 --- !u!114 &114349955952862052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,6 +147,36 @@ MonoBehaviour:
   description: MirrorChecked
   satisfied: 0
   hash: -2036212832
+--- !u!114 &114595765378543212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: '[M2]DoorChecked'
+  m_EditorClassIdentifier: 
+  description: '[M2]DoorChecked'
+  satisfied: 0
+  hash: 1611428974
+--- !u!114 &114598325114964706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: '[M2]BadEnding'
+  m_EditorClassIdentifier: 
+  description: '[M2]BadEnding'
+  satisfied: 0
+  hash: 1119229155
 --- !u!114 &114763177366975336
 MonoBehaviour:
   m_ObjectHideFlags: 0

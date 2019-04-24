@@ -4,7 +4,7 @@ using UnityEngine;
 public class StartingPosition : MonoBehaviour
 {
     public string startingPointName;
-
+    private GameObject Player;
 
     private static List<StartingPosition> allStartingPositions =  new List<StartingPosition> ();
 
@@ -20,15 +20,20 @@ public class StartingPosition : MonoBehaviour
         allStartingPositions.Remove (this);
     }
 
+    void Awake()
+    {
+        Player = FindObjectOfType<PlayerMove>().gameObject;
+    }
 
-    public static Transform FindStartingPosition (string pointName)
+    public static Vector3 FindStartingPosition (string pointName)
     {
         for (int i = 0; i < allStartingPositions.Count; i++)
         {
             if (allStartingPositions[i].startingPointName == pointName)
-                return allStartingPositions[i].transform;
+                return allStartingPositions[i].transform.position;
         }
 
-        return null;
+        return Vector3.zero;
     }
+
 }
