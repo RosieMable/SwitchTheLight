@@ -10,7 +10,7 @@ Shader "Custom/DissolveSHader"
 
         //Properties for the dissolve effect
         _DissolveTex ("Dissolve Texture", 2D) = "white" {} //Texture that is going to be the pattern used to dissolve the mesh
-        _DissolveAmount("Dissolve Amount", Range(0,1)) = 0.5 //Slider to indicate how much the mesh should be dissolving
+      /*  _DissolveAmount("Dissolve Amount", Range(0,1)) = 0.5 *///Slider to indicate how much the mesh should be dissolving
 
 
         //Because the isVisible variable slowly approaches zero, we can predict when we’re about to discard a pixel. A common effect is to make that border, just before we discard the pixel, glow.
@@ -37,7 +37,7 @@ Shader "Custom/DissolveSHader"
         sampler2D _DissolveTex;
 
         //Reference to the slider
-        float _DissolveAmount;
+       uniform float _DissolveAmount;
         float3 _GlowColor;
         float _GlowRange;
         float _GlowFallOff;

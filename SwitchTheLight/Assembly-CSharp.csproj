@@ -102,6 +102,7 @@
      <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
      <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+     <Compile Include="Assets\Scripts\_OtherScripts\BookStairs.cs" />
      <Compile Include="Assets\Scripts\_OtherScripts\MoveTowards.cs" />
      <Compile Include="Assets\Scripts\_OtherScripts\OnPlayerCollisionReaction.cs" />
      <Compile Include="Assets\Scripts\_OtherScripts\RaycastMousePos.cs" />

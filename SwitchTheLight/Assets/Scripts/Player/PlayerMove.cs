@@ -18,7 +18,7 @@ public class PlayerMove : MonoBehaviour
 
     public bool isWalking = false;
 
-
+    [SerializeField]
     private bool isJumping;
 
     private void Awake()
