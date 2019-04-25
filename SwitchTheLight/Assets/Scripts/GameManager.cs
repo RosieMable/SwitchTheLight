@@ -59,21 +59,32 @@ public class GameManager : MonoBehaviour
             case 1:
                 Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[0];
                 Player.GetComponent<PlayerMove>().movementSpeed = 2;
+
                 break;
 
             case 2:
                 Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[1];
                 Player.GetComponent<PlayerMove>().movementSpeed = 4;
+                StartingPosition.FindStartingPosition("M1StartPoint");
+
+                break;
+
+            case 3:
+                Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[0];
+                Player.GetComponent<PlayerMove>().movementSpeed = 2;
+                StartingPosition.FindStartingPosition("AM1StartPoint");
+
                 break;
 
             case 4:
-                Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[0];
-                Player.GetComponent<PlayerMove>().movementSpeed = 2;
+                Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[2];
+                Player.GetComponent<PlayerMove>().movementSpeed = 6;
+
                 break;
 
             case 5:
-                Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[2];
-                Player.GetComponent<PlayerMove>().movementSpeed = 6;
+                Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[0];
+                Player.GetComponent<PlayerMove>().movementSpeed = 2;
                 break;
 
 
@@ -83,11 +94,6 @@ public class GameManager : MonoBehaviour
 
     void FindStartingPosForPlayer()
     {
-        Vector3 newPCPos = StartingPosition.FindStartingPosition(StartingPos.startingPointName);
-
-        Player.transform.position = newPCPos;
-
-        print(newPCPos);
     }
 
     private void OnDisable()

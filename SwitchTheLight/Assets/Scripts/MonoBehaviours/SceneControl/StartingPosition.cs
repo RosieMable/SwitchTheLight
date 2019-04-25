@@ -6,37 +6,53 @@ public class StartingPosition : MonoBehaviour
     public string startingPointName;
     private GameObject Player;
 
-    private static List<StartingPosition> allStartingPositions =  new List<StartingPosition> ();
+    [SerializeField]
+    public static List<StartingPosition> allStartingPositions =  new List<StartingPosition> ();
 
 
     private void OnEnable ()
     {
         allStartingPositions.Add (this);
+        
     }
 
 
-    private void OnDisable ()
-    {
-        allStartingPositions.Remove (this);
-    }
+    //private void OnDisable ()
+    //{
+    //    OnChangeScene();
+    //}
 
     void Awake()
     {
         Player = FindObjectOfType<PlayerMove>().gameObject;
+
     }
 
-    public static Vector3 FindStartingPosition (string pointName)
+    public static Transform FindStartingPosition (string pointName)
     {
-
-        allStartingPositions.Clear();
+        foreach (var item in allStartingPositions)
+        {
+            print(item.gameObject.name);
+        }
 
         for (int i = 0; i < allStartingPositions.Count; i++)
         {
             if (allStartingPositions[i].startingPointName == pointName)
-                return allStartingPositions[i].transform.position;
+                return allStartingPositions[i].transform;
+
+            if (allStartingPositions[i].transform != null)
+            {
+
+                FindObjectOfType<PlayerMove>().transform.position = allStartingPositions[i].transform.position;
+            }
         }
 
-        return Vector3.zero;
+        return null;
+    }
+
+    public void OnChangeScene()
+    {
+        allStartingPositions.Remove(this);
     }
 
 }
