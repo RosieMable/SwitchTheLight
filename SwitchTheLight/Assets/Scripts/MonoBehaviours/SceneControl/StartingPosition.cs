@@ -27,6 +27,9 @@ public class StartingPosition : MonoBehaviour
 
     public static Vector3 FindStartingPosition (string pointName)
     {
+
+        allStartingPositions.Clear();
+
         for (int i = 0; i < allStartingPositions.Count; i++)
         {
             if (allStartingPositions[i].startingPointName == pointName)

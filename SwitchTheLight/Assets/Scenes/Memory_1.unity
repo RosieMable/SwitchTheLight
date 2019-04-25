@@ -324,7 +324,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 1046622365}
-  - {fileID: 962547693}
   - {fileID: 592367141}
 --- !u!4 &195920562
 Transform:
@@ -1313,7 +1312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37928671becf1a4429a8088d8bec2f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0
+  delay: 6
   behaviour: {fileID: 2046070842}
   enabledState: 1
 --- !u!1 &572113501
@@ -1424,7 +1423,7 @@ MonoBehaviour:
   sceneName: AfterM1
   startingPointInLoadedScene: AM1StartPoint
   playerSaveData: {fileID: 11400000, guid: 7d6ffd49cb0de9a4d887b5dd0822f626, type: 2}
-  delay: 4
+  delay: 0
 --- !u!1 &592751548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1950,7 +1949,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: After all...
+  message: 'After all...
+
+    I decide who I am, not this stupid mirror.'
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
 --- !u!114 &854605985
@@ -2411,21 +2412,6 @@ Transform:
   m_Father: {fileID: 392294588}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &962547693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: I remember where I come from now...
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 3
 --- !u!1 &982930423
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,8 +2457,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 839483818}
-  - {fileID: 1104974876}
   - {fileID: 1267431087}
+  - {fileID: 1254887909}
 --- !u!1 &1016834600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2625,7 +2611,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: How could I have forgotten all of this?
+  message: 'How could I have forgotten all of this?
+
+    I remember where I come from now...'
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
 --- !u!1 &1067160045
@@ -2719,21 +2707,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067160045}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1104974876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: I decide who I am, not this stupid mirror.
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 2
 --- !u!114 &1154895586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2969,6 +2942,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202593379}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1254887909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37928671becf1a4429a8088d8bec2f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+  behaviour: {fileID: 2046070842}
+  enabledState: 1
 --- !u!114 &1267431087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3429,7 +3417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1679243978
 Transform:
   m_ObjectHideFlags: 0
@@ -4280,12 +4268,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2046070840}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 23.09, y: 1.09, z: 10.81}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
-  m_Father: {fileID: 921630450}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2046070842
 MonoBehaviour:
@@ -4609,8 +4597,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.9372485, y: 1, z: 1}
+  m_Center: {x: -0.46862334, y: 0, z: -0.000000009472432}
 --- !u!23 &2112938531
 MeshRenderer:
   m_ObjectHideFlags: 0
