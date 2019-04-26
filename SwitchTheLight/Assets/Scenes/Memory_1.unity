@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37928671becf1a4429a8088d8bec2f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 5
+  delay: 3
   behaviour: {fileID: 554771219}
   enabledState: 1
 --- !u!1 &76444540
@@ -786,7 +786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37928671becf1a4429a8088d8bec2f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 5
+  delay: 3
   behaviour: {fileID: 1868181364}
   enabledState: 1
 --- !u!1 &367291570
@@ -1300,21 +1300,6 @@ MonoBehaviour:
     Who am I, then...?'
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
---- !u!114 &560275276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37928671becf1a4429a8088d8bec2f34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 6
-  behaviour: {fileID: 2046070842}
-  enabledState: 1
 --- !u!1 &572113501
 GameObject:
   m_ObjectHideFlags: 0
@@ -3216,7 +3201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37928671becf1a4429a8088d8bec2f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 5
+  delay: 3
   behaviour: {fileID: 799682012}
   enabledState: 1
 --- !u!1001 &1443152713
@@ -3502,7 +3487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1a9400b6609fb4aba06d78b45ca76c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingPointName: M1Start
 --- !u!1001 &1719923593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3634,7 +3618,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1a9400b6609fb4aba06d78b45ca76c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingPointName: M1Start
 --- !u!4 &1761285035
 Transform:
   m_ObjectHideFlags: 0
@@ -3661,7 +3644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80c32f1270758a64ba4bc71dbf7e498b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 3
+  delay: 1
   gameObject: {fileID: 1958924291}
   activeState: 1
 --- !u!114 &1815088699
@@ -4208,7 +4191,6 @@ MonoBehaviour:
   - {fileID: 1902711140}
   - {fileID: 713413532}
   - {fileID: 620470073}
-  - {fileID: 560275276}
 --- !u!1001 &2039085080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4700,7 +4682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37928671becf1a4429a8088d8bec2f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 5
+  delay: 3
   behaviour: {fileID: 1016834605}
   enabledState: 1
 --- !u!114 &2125653341

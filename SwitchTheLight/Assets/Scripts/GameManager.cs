@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
             case 1: //DarkScene
                 Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[0];
                 Player.GetComponent<PlayerMove>().movementSpeed = 2;
+                Player.gameObject.transform.position = startingPoints[1].position;
 
                 break;
 
@@ -82,9 +83,10 @@ public class GameManager : MonoBehaviour
 
                 break;
 
-            case 5:
+            case 5: //AM2
                 Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[0];
                 Player.GetComponent<PlayerMove>().movementSpeed = 2;
+                Player.gameObject.transform.position = startingPoints[1].position;
                 break;
 
 

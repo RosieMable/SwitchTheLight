@@ -43,5 +43,24 @@ public class OnPlayerCollisionReaction : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay(Collider collider)
+    {
+        if (WallParent.enabled)
+        {
+            if (collider.gameObject.GetComponent<PlayerMove>())
+            {
+                reaction.React();
+                print("Reaction time!");
+            }
+        }
+        else
+        {
+            if (collider.gameObject.GetComponent<PlayerMove>())
+            {
+                Physics.IgnoreCollision(this.GetComponent<Collider>(), collider);
+            }
+        }
+    }
+
 
 }

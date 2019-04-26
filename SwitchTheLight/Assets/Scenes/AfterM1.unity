@@ -286,6 +286,7 @@ MonoBehaviour:
   reactions:
   - {fileID: 1933807651}
   - {fileID: 1758192721}
+  - {fileID: 430284520}
 --- !u!4 &66041315
 Transform:
   m_ObjectHideFlags: 0
@@ -599,6 +600,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reactions:
   - {fileID: 1378549548}
+--- !u!114 &430284520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c32f1270758a64ba4bc71dbf7e498b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 6
+  gameObject: {fileID: 1518533453}
+  activeState: 0
 --- !u!1001 &431146177
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1084,21 +1100,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 727230271}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &746530739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: '[M1] BadEnding'
-  satisfied: 1
-  hash: 24314482
 --- !u!1001 &748453971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1238,7 +1239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionLocation: {fileID: 748453973}
   conditionCollections: []
-  defaultReactionCollection: {fileID: 0}
+  defaultReactionCollection: {fileID: 340360410}
   isCooldown: 0
 --- !u!114 &758592845
 MonoBehaviour:
@@ -1651,6 +1652,21 @@ MonoBehaviour:
   message: Now I remember who I used to be...
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
+--- !u!114 &980834431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: '[M1] BadEnding'
+  satisfied: 1
+  hash: 24314482
 --- !u!1 &994300509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,6 +2197,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1242536398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: '[M1]GoodReaction'
+  requiredConditions:
+  - {fileID: 1321514470}
+  ReactionCollection: {fileID: 719869459}
 --- !u!114 &1250489537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2304,6 +2336,37 @@ MonoBehaviour:
   message: I think I can sleep again now...
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
+--- !u!114 &1319263132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: '[M1] BadReaction'
+  requiredConditions:
+  - {fileID: 980834431}
+  ReactionCollection: {fileID: 1837990358}
+--- !u!114 &1321514470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: '[M1] GoodEnding'
+  satisfied: 0
+  hash: -1532371319
 --- !u!1 &1343317232
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,8 +2425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   description: '[M1]BadEnd'
-  requiredConditions:
-  - {fileID: 746530739}
+  requiredConditions: []
   ReactionCollection: {fileID: 112656518}
 --- !u!1 &1370337599
 GameObject:
@@ -3653,8 +3715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   description: '[M1]GoodEnd'
-  requiredConditions:
-  - {fileID: 1926603662}
+  requiredConditions: []
   ReactionCollection: {fileID: 994300511}
 --- !u!1001 &1911494318
 PrefabInstance:
@@ -3831,8 +3892,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionLocation: {fileID: 1911494320}
   conditionCollections:
-  - {fileID: 1356551074}
-  - {fileID: 1894299617}
+  - {fileID: 1319263132}
+  - {fileID: 1242536398}
   defaultReactionCollection: {fileID: 0}
   isCooldown: 0
 --- !u!65 &1911494322
@@ -3848,21 +3909,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1881.313, y: 2020.8154, z: 624.5733}
   m_Center: {x: 22.500658, y: 1009.90784, z: 311.7868}
---- !u!114 &1926603662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  description: '[M1] GoodEnding'
-  satisfied: 1
-  hash: -1532371319
 --- !u!114 &1933807651
 MonoBehaviour:
   m_ObjectHideFlags: 0
