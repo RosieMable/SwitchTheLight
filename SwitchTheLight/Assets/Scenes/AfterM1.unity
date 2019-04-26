@@ -479,6 +479,21 @@ MonoBehaviour:
     if I do not know who I am?'
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
+--- !u!114 &313548758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: '[M1] BadEnding'
+  satisfied: 1
+  hash: 24314482
 --- !u!1001 &340360408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -735,6 +750,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 443411953}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &457996940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48c14b7cdc8cc6347b3a5d48d05c9c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: '[M1] GoodEnding'
+  satisfied: 1
+  hash: -1532371319
 --- !u!1001 &458221134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -950,10 +980,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 1911494320}
+  interactionLocation: {fileID: 657825572}
   conditionCollections:
-  - {fileID: 1356551074}
-  - {fileID: 1894299617}
+  - {fileID: 1137980233}
+  - {fileID: 1250489537}
   defaultReactionCollection: {fileID: 0}
   isCooldown: 0
 --- !u!1 &719869458
@@ -1015,27 +1045,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c98458455be827c41a2536fc1affd2e8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.54
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c98458455be827c41a2536fc1affd2e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.47
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c98458455be827c41a2536fc1affd2e8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.22
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c98458455be827c41a2536fc1affd2e8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c98458455be827c41a2536fc1affd2e8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c98458455be827c41a2536fc1affd2e8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c98458455be827c41a2536fc1affd2e8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1771,6 +1801,22 @@ MonoBehaviour:
     I should just throw it away...'
   textColor: {r: 1, g: 1, b: 1, a: 1}
   delay: 0
+--- !u!114 &1137980233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: BadReaction
+  requiredConditions:
+  - {fileID: 313548758}
+  ReactionCollection: {fileID: 1544350909}
 --- !u!114 &1150058645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2015,7 +2061,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1a9400b6609fb4aba06d78b45ca76c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingPointName: AM1StartPoint
 --- !u!4 &1221594677
 Transform:
   m_ObjectHideFlags: 0
@@ -2136,6 +2181,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1250489537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4900350095ceff24fbe8c1ac5f1e17c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: GoodReaction
+  requiredConditions:
+  - {fileID: 457996940}
+  ReactionCollection: {fileID: 1447623945}
 --- !u!1 &1294373166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,7 +2364,7 @@ MonoBehaviour:
   description: '[M1]BadEnd'
   requiredConditions:
   - {fileID: 746530739}
-  ReactionCollection: {fileID: 1544350909}
+  ReactionCollection: {fileID: 112656518}
 --- !u!1 &1370337599
 GameObject:
   m_ObjectHideFlags: 0
@@ -2313,8 +2374,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1370337602}
-  - component: {fileID: 1370337600}
   - component: {fileID: 1370337601}
+  - component: {fileID: 1370337600}
   m_Layer: 9
   m_Name: Bed
   m_TagString: Untagged
@@ -2333,8 +2394,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.1330357, y: 4.0692024, z: 3.797042}
-  m_Center: {x: 0.021763802, y: 1.5346012, z: -1.5531163}
+  m_Size: {x: 6.5775833, y: 2.9363575, z: 3.301795}
+  m_Center: {x: -0.00011444092, y: 1.4620538, z: -1.5081491}
 --- !u!114 &1370337601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2360,7 +2421,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370337599}
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.286612, y: 0.079999685, z: 13.19}
+  m_LocalPosition: {x: 23.25, y: 1.51, z: 10.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1437500066}
@@ -3594,7 +3655,7 @@ MonoBehaviour:
   description: '[M1]GoodEnd'
   requiredConditions:
   - {fileID: 1926603662}
-  ReactionCollection: {fileID: 1447623945}
+  ReactionCollection: {fileID: 994300511}
 --- !u!1001 &1911494318
 PrefabInstance:
   m_ObjectHideFlags: 0

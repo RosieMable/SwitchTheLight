@@ -354,7 +354,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1a9400b6609fb4aba06d78b45ca76c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingPointName: M1Start
 --- !u!4 &719946055
 Transform:
   m_ObjectHideFlags: 0
@@ -647,7 +646,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1a9400b6609fb4aba06d78b45ca76c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingPointName: M2StartPoint
 --- !u!4 &1949946252
 Transform:
   m_ObjectHideFlags: 0
@@ -907,7 +905,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1a9400b6609fb4aba06d78b45ca76c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingPointName: AM1StartPoint
 --- !u!1 &2047512500
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +953,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3aba5b0626990724c8b7d1a8761344d5, type: 2}
   - {fileID: 11400000, guid: 0eaf99c7221be354390ae59084490a33, type: 2}
   - {fileID: 11400000, guid: 78cc77a29d0b7ca448248539d09895da, type: 2}
+  startingPoints:
+  - {fileID: 719946055}
+  - {fileID: 2040377142}
+  - {fileID: 1949946252}
 --- !u!114 &2047512503
 MonoBehaviour:
   m_ObjectHideFlags: 0

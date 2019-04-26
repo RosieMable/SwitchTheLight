@@ -16,12 +16,12 @@ public class GameManager : MonoBehaviour
 
     private GameObject Player;
 
-    private StartingPosition StartingPos;
+    [SerializeField]
+    private Transform[] startingPoints;
 
     private void OnEnable()
     {
         SceneController.AfterSceneLoad += CheckCameraPostProcessing;
-        SceneController.AfterSceneLoad += FindStartingPosForPlayer;
     }
 
     private void Awake()
@@ -34,7 +34,6 @@ public class GameManager : MonoBehaviour
         }
 
         Player = FindObjectOfType<PlayerMove>().gameObject;
-        StartingPos = FindObjectOfType<StartingPosition>();
     }
 
     // Start is called before the first frame update
@@ -56,29 +55,30 @@ public class GameManager : MonoBehaviour
 
         switch (y)
         {
-            case 1:
+            case 1: //DarkScene
                 Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[0];
                 Player.GetComponent<PlayerMove>().movementSpeed = 2;
 
                 break;
 
-            case 2:
+            case 2: //Memory1
                 Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[1];
                 Player.GetComponent<PlayerMove>().movementSpeed = 4;
-                StartingPosition.FindStartingPosition("M1StartPoint");
+                Player.gameObject.transform.position = startingPoints[0].position;
 
                 break;
 
-            case 3:
+            case 3: //AM1
                 Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[0];
                 Player.GetComponent<PlayerMove>().movementSpeed = 2;
-                StartingPosition.FindStartingPosition("AM1StartPoint");
+                Player.gameObject.transform.position = startingPoints[1].position;
 
                 break;
 
-            case 4:
+            case 4: //M2
                 Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[2];
                 Player.GetComponent<PlayerMove>().movementSpeed = 6;
+                Player.gameObject.transform.position = startingPoints[2].position;
 
                 break;
 
@@ -92,14 +92,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void FindStartingPosForPlayer()
-    {
-    }
-
     private void OnDisable()
     {
         SceneController.AfterSceneLoad -= CheckCameraPostProcessing;
-        SceneController.AfterSceneLoad -= FindStartingPosForPlayer;
 
     }
 }

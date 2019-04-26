@@ -16,7 +16,6 @@
 
     protected override void ImmediateReaction()
     {
-        StartingPosition.FindStartingPosition(startingPointInLoadedScene);
         sceneController.FadeAndLoadSceneWithDelay (this, delay);
     }
 }

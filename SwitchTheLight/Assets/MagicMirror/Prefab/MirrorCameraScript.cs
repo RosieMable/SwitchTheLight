@@ -206,7 +206,6 @@ public class MirrorCameraScript : MonoBehaviour
     {
         if (reflectionTexture)
         {
-            DestroyImmediate(reflectionTexture);
             reflectionTexture = null;
         }
     }
