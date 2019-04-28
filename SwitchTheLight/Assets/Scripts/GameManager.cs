@@ -36,19 +36,6 @@ public class GameManager : MonoBehaviour
         Player = FindObjectOfType<PlayerMove>().gameObject;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
     void CheckCameraPostProcessing()
     {
         int y = SceneManager.GetActiveScene().buildIndex;
@@ -83,10 +70,14 @@ public class GameManager : MonoBehaviour
 
                 break;
 
-            case 5: //AM2
+            case 5: //GoodEnding
                 Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[0];
-                Player.GetComponent<PlayerMove>().movementSpeed = 2;
-                Player.gameObject.transform.position = startingPoints[1].position;
+                Player.GetComponent<PlayerMove>().enabled = false;
+                break;
+
+            case 6: //BadEnding
+                Camera.main.GetComponent<PostProcessingBehaviour>().profile = CameraProfiles[0];
+                Player.GetComponent<PlayerMove>().enabled = false;
                 break;
 
 

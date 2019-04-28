@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Memory_2.unity
     guid: baa9b9b78f21b154a96e0ab19d858195
   - enabled: 1
-    path: Assets/Scenes/AfterM2.unity
-    guid: f9466096952ff94498586ba1c16eb88e
+    path: Assets/Scenes/GoodEnding.unity
+    guid: 093d222c4da224a4aa6cc8ea32e24f06
+  - enabled: 1
+    path: Assets/Scenes/BadEnding.unity
+    guid: 7fbe29248c7d9f04b85f6a2d0e8447f4
   m_configObjects: {}
