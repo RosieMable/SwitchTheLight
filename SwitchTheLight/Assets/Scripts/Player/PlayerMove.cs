@@ -18,9 +18,6 @@ public class PlayerMove : MonoBehaviour
 
     public bool isWalking = false;
 
-    [SerializeField]
-    private bool isJumping;
-
     private void Awake()
     {
         charController = GetComponent<CharacterController>();
@@ -53,36 +50,7 @@ public class PlayerMove : MonoBehaviour
             isWalking = true;
         }
 
-        JumpInput();
 
     }
-
-    private void JumpInput()
-    {
-        if (Input.GetKeyDown(jumpKey) && !isJumping)
-        {
-            isJumping = true;
-            isWalking = false;
-            StartCoroutine(JumpEvent());
-        }
-    }
-
-    private IEnumerator JumpEvent()
-    {
-        charController.slopeLimit = 90.0f;
-        float timeInAir = 0.0f;
-
-        do
-        {
-            float jumpForce = jumpFallOff.Evaluate(timeInAir);
-            charController.Move(Vector3.up * jumpForce * jumpMultiplier * Time.deltaTime);
-            timeInAir += Time.deltaTime;
-            yield return null;
-        } while (!charController.isGrounded && charController.collisionFlags != CollisionFlags.Above);
-
-        charController.slopeLimit = 45.0f;
-        isJumping = false;
-    }
-
 
     }

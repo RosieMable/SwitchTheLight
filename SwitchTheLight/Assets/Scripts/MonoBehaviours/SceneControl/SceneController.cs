@@ -39,18 +39,6 @@ public class SceneController : MonoBehaviour
         }
     }
 
-    public void FadeAndLoadSceneWithDelay (SceneReaction sceneReaction, float delay)
-    {
-        float startTime = Time.time + delay;
-
-
-        if (!isFading & Time.time >= startTime)
-        {
-            startTime = delay;
-            StartCoroutine (FadeAndSwitchScenes (sceneReaction.sceneName));
-        }
-    }
-
 
     //Function that initiate the fading process, it unloads the current scene while loading the new one and switching to it.
     private IEnumerator FadeAndSwitchScenes (string sceneName)

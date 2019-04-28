@@ -99,7 +99,6 @@
     <Compile Include="Assets\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
     <Compile Include="Assets\Scripts\Editor\Abstract\EditorWithSubEditors.cs" />
     <Compile Include="Assets\Scripts\Editor\DataPersistence\DataResetterEditor.cs" />
-    <Compile Include="Assets\Scripts\Editor\DataPersistence\SaveDataEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\Extensions\SerializedPropertyExtensions.cs" />
     <Compile Include="Assets\Scripts\Editor\Interaction\Conditions\AllConditionsEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\Interaction\Conditions\ConditionCollectionEditor.cs" />
@@ -111,12 +110,9 @@
     <Compile Include="Assets\Scripts\Editor\Interaction\ReactionEditors\BehaviourReactionEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\Interaction\ReactionEditors\ConditionReactionEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\Interaction\ReactionEditors\GameObjectReactionEditor.cs" />
-    <Compile Include="Assets\Scripts\Editor\Interaction\ReactionEditors\LostItemReactionEditor.cs" />
-    <Compile Include="Assets\Scripts\Editor\Interaction\ReactionEditors\PickedUpReactionEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\Interaction\ReactionEditors\ReactionEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\Interaction\ReactionEditors\SceneReactionEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\Interaction\ReactionEditors\TextReactionEditor.cs" />
-    <Compile Include="Assets\Scripts\Editor\Inventory\InventoryEditor.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/GitHub/SwitchTheLight/SwitchTheLight/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

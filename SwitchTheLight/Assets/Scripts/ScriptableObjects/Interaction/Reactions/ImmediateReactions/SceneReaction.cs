@@ -3,10 +3,8 @@
     public string sceneName;
     public string startingPointInLoadedScene;
     public SaveData playerSaveData;
-    public float delay;
 
     private SceneController sceneController;
-    private StartingPosition startPos;
 
     protected override void SpecificInit()
     {
@@ -16,6 +14,6 @@
 
     protected override void ImmediateReaction()
     {
-        sceneController.FadeAndLoadSceneWithDelay (this, delay);
+        sceneController.FadeAndLoadScene (this);
     }
 }
