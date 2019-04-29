@@ -11,7 +11,7 @@ public class FieldOfViewEditor : Editor {
     {
         FieldOfView fow = (FieldOfView)target;
 
-        //drawing the fieldview of the targets
+        //drawing the fieldview for the targets
         Handles.color = Color.white;
         Handles.DrawWireArc(fow.transform.position, Vector3.up, Vector3.forward, 360, fow.viewRadius);
         Vector3 v3_viewAngleA = fow.DirFromAngle(-fow.viewAngle / 2, false);

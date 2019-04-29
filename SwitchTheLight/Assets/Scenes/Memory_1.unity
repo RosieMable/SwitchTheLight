@@ -687,12 +687,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 335317805}
   conditionCollections:
   - {fileID: 898518850}
   - {fileID: 389119390}
   defaultReactionCollection: {fileID: 917355428}
-  isCooldown: 0
 --- !u!1 &348011414
 GameObject:
   m_ObjectHideFlags: 0
@@ -2260,11 +2258,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 921630450}
   conditionCollections:
   - {fileID: 854605985}
   defaultReactionCollection: {fileID: 785208841}
-  isCooldown: 0
 --- !u!114 &921630453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2310,11 +2306,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 959881850}
   conditionCollections:
   - {fileID: 1726962240}
   defaultReactionCollection: {fileID: 592751550}
-  isCooldown: 0
 --- !u!65 &959881847
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2807,10 +2801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 1186016049}
   conditionCollections: []
   defaultReactionCollection: {fileID: 189748080}
-  isCooldown: 0
 --- !u!1 &1202593379
 GameObject:
   m_ObjectHideFlags: 0
@@ -3573,7 +3565,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1761285035}
-  - component: {fileID: 1761285034}
   m_Layer: 9
   m_Name: M1StartPoint
   m_TagString: Untagged
@@ -3581,18 +3572,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1761285034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761285033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1a9400b6609fb4aba06d78b45ca76c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1761285035
 Transform:
   m_ObjectHideFlags: 0
@@ -4090,10 +4069,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 572415613}
   conditionCollections: []
   defaultReactionCollection: {fileID: 780790930}
-  isCooldown: 0
 --- !u!1 &2007599498
 GameObject:
   m_ObjectHideFlags: 0
@@ -4500,10 +4477,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 2072504159}
   conditionCollections: []
   defaultReactionCollection: {fileID: 1412633641}
-  isCooldown: 0
 --- !u!65 &2072504157
 BoxCollider:
   m_ObjectHideFlags: 0

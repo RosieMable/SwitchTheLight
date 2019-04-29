@@ -60,14 +60,14 @@ public class FieldOfView : MonoBehaviour {
                 {
                     float distToTarget = Vector3.Distance(transform.position, target.position);
 
-                    //Checks if between the object and the targets there are any obstacles, taking in consideration the obstacle layerMask
+                    //Checks if there is an object with the interactable script on, if so then...
                     if (target.GetComponent<Interactable>())
                     {
                         visibleTargets.Add(target);
 
                         textManager.textIntName.text = target.name + " Interact (E)";
 
-                             if (Input.GetKey(KeyCode.E))
+                             if (Input.GetKey(KeyCode.E)) //If pressed E then interact
                             {
                               target.GetComponent<Interactable>().Interact();
                             }
@@ -86,7 +86,7 @@ public class FieldOfView : MonoBehaviour {
     }
 
 
-    //
+    //Used to calculate the angle, it is used for the visual reppresentation in the editor
     public Vector3 DirFromAngle(float fl_angleInDegrees, bool bl_angleIsGlobal)
     {
         if(!bl_angleIsGlobal)
