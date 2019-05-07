@@ -174,14 +174,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 43863986}
   conditionCollections:
   - {fileID: 758592845}
   - {fileID: 1096813976}
   - {fileID: 594519277}
   - {fileID: 698743340}
   defaultReactionCollection: {fileID: 0}
-  isCooldown: 0
 --- !u!65 &43863983
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -463,13 +461,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 156372170}
   conditionCollections:
   - {fileID: 1356551074}
   - {fileID: 1894299617}
   - {fileID: 692946282}
   defaultReactionCollection: {fileID: 0}
-  isCooldown: 0
 --- !u!65 &156372172
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -646,26 +642,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 5071119809066281819, guid: 3a408d12bac52d04b9f8cba29000b317, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3a408d12bac52d04b9f8cba29000b317, type: 3}
---- !u!1 &340360409 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8785764733563428432, guid: 3a408d12bac52d04b9f8cba29000b317,
-    type: 3}
-  m_PrefabInstance: {fileID: 340360408}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &340360410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 340360409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fc7ecfe98531f2429694b8c81a6748a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reactions:
-  - {fileID: 1378549548}
 --- !u!114 &397579058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1124,14 +1100,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 657825572}
   conditionCollections:
   - {fileID: 1137980233}
   - {fileID: 1250489537}
   - {fileID: 308777301}
   - {fileID: 397579058}
   defaultReactionCollection: {fileID: 0}
-  isCooldown: 0
 --- !u!114 &692946282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1390,34 +1364,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 977d462d3da090443aa549827d636355, type: 3}
---- !u!1 &748453972 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 123684, guid: 977d462d3da090443aa549827d636355,
-    type: 3}
-  m_PrefabInstance: {fileID: 748453971}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &748453973 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 423996, guid: 977d462d3da090443aa549827d636355,
     type: 3}
   m_PrefabInstance: {fileID: 748453971}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &748453974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748453972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 748453973}
-  conditionCollections: []
-  defaultReactionCollection: {fileID: 340360410}
-  isCooldown: 0
 --- !u!114 &756162914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3080,11 +3032,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 1370337602}
   conditionCollections:
   - {fileID: 1654313417}
   defaultReactionCollection: {fileID: 1437500067}
-  isCooldown: 0
 --- !u!4 &1370337602
 Transform:
   m_ObjectHideFlags: 0
@@ -3102,21 +3052,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1378549548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03f8a149ea5a3aa4583dc1cab3334cbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  message: '[PutSomethingHere]'
-  textColor: {r: 1, g: 1, b: 1, a: 1}
-  delay: 0
 --- !u!1 &1385915022
 GameObject:
   m_ObjectHideFlags: 0
@@ -4645,14 +4580,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d85941078afdf3244b2a1ae50fea256c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLocation: {fileID: 1911494320}
   conditionCollections:
   - {fileID: 1319263132}
   - {fileID: 1242536398}
   - {fileID: 814731214}
   - {fileID: 756162914}
   defaultReactionCollection: {fileID: 0}
-  isCooldown: 0
 --- !u!65 &1911494322
 BoxCollider:
   m_ObjectHideFlags: 0
