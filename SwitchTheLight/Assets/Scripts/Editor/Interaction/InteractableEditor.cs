@@ -5,7 +5,6 @@ using UnityEditor;
 public class InteractableEditor : EditorWithSubEditors<ConditionCollectionEditor, ConditionCollection>
 {
     private Interactable interactable;
-    private SerializedProperty interactionLocationProperty;
     private SerializedProperty collectionsProperty;
     private SerializedProperty defaultReactionCollectionProperty;
 
@@ -21,7 +20,6 @@ public class InteractableEditor : EditorWithSubEditors<ConditionCollectionEditor
         interactable = (Interactable)target;
 
         collectionsProperty = serializedObject.FindProperty(interactablePropConditionCollectionsName);
-        interactionLocationProperty = serializedObject.FindProperty(interactablePropInteractionLocationName);
         defaultReactionCollectionProperty = serializedObject.FindProperty(interactablePropDefaultReactionCollectionName);
         
         CheckAndCreateSubEditors(interactable.conditionCollections);
@@ -46,8 +44,6 @@ public class InteractableEditor : EditorWithSubEditors<ConditionCollectionEditor
         
         CheckAndCreateSubEditors(interactable.conditionCollections);
         
-        EditorGUILayout.PropertyField (interactionLocationProperty
-            );
 
         for (int i = 0; i < subEditors.Length; i++)
         {
